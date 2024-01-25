@@ -112,7 +112,7 @@ def load_config(args):
 def main(args):
     if args.config:
         load_config(args)
-    print(f'备注：{args.comm}')
+    print(f'comment: {args.comm}')
     os.environ['CUDA_VISIBLE_DEVICES'] = f'{args.gpuID}'
     print(args)
     train(args,task=args.task,
