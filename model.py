@@ -27,7 +27,7 @@ class PTBox(nn.Module):
         self.gumbel_beta = gumbel_beta
         self.min_init_value = min_init_value
         self.delta_init_value = delta_init_value
-        self.euler_gamma = 0.57721566490153286060  # 欧拉常数
+        self.euler_gamma = 0.57721566490153286060  # Euler's constant
         self.time_k = tk
         self.gpu = cuda
         
